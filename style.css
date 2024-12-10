@@ -1,0 +1,15 @@
+/* Basic Body Styling */
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Sometype+Mono&display=swap");
+
+body {
+  width: 90vw;
+  height: 90vh;
+  margin: 0;
+  display: flex;
+  background-color: #000000;
+  background-image: url("Images/Cutscene.png"); /* Keep this if you want an image as well */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; /* Change cursor to pointer to indicate clickable area */
+}
