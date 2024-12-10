@@ -8,6 +8,91 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Left Section with Puzzle -->
+    <div class="left">
+      <div class="numberspuzzle" id="puzzle1"></div>
+    </div>
+
+    <div class="numberspuzzle"></div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <div class="twinbox">
+        <div class="boxwithin"></div>
+        <div class="boxwithin">
+          <!-- Red div that triggers the modal -->
+          <div class="number red" onclick="showScreen()"></div>
+          <div class="onebox orange" onclick="showScreen2()"></div>
+          <div class="twobox purple" onclick="showScreen3()"></div>
+        </div>
+      </div>
+
+      <div class="twinbox2">
+        <div class="doublebox"></div>
+        <div class="doublebox"></div>
+        <div class="doublebox"></div>
+      </div>
+    </div>
+    <div class="timer" id="timerDisplay">
+      <span id="seconds">10s</span>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal modal1">
+      <div class="modal-content center-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="movable-div2">
+          <input type="text" placeholder="Enter text here..." />
+          <input type="submit" value="Submit" class="submitbutton" />
+        </div>  
+        <img src="Images/KeypadScreen3.png"  />
+      
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal modal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal2()">&times;</span>
+        <div class="fill">
+          <!-- Top Half -->
+            <div class="half "> 
+              <div class="three">
+                <div class="doublebox">
+                  <div class="boxwithin yellow">
+                    <div class="squares red"></div>
+                    <div class="squares orange"></div>
+                    </div>
+                  </div>
+
+                  <div class="boxwithin white"></div>
+
+                </div>
+                <div class="doublebox blue"></div>
+              </div>
+              <div class="quarter orange"></div>
+            </div>
+            <div class="half ">
+              <div class="three orange"></div>
+              <div class="quarter pink"></div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Modal 3 -->
+      <div id="modal3" class="modal modal3">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal3()">&times;</span>
+          <div class="center-content">
+            <img src="Images/MorsePuzzle.png" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
